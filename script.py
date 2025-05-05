@@ -13,7 +13,7 @@ df = pd.read_excel(file_path)
 # Find all cells that contain "Paolo"
 matches = df.isin(['Paolo'])
 
-lessons = []
+lesson = []
 
 for row_idx, col_idx in zip(*matches.to_numpy().nonzero()):
     # First cell of the same row (assuming it's column 0)
